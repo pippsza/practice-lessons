@@ -14,5 +14,34 @@ function getQuater(number) {
     return `Число ${number} не підпадає ні під яку чверть.`;
   }
 }
-const askNumber = Number(prompt());
-console.log(getQuater(askNumber));
+// const askNumber = Number(prompt());
+// console.log(getQuater(askNumber));
+
+//~ Напиши функцію яка запитує у користувача ведення числа  1, 2, 3 або 4. Якщо вона має
+//~ значення '1', то у змінну result запишемо 'зима', якщо має значення
+//~ '2' - 'весна' і так далі. Розв'яжіть завдання через switch-case.
+
+function getSeason(number) { 
+  let result = "";
+  switch (number) {
+    case 1: result = "Зима";
+      break;
+    
+    case 2: result = "Весна";
+      break;
+    
+    case 3: result = "Літо";
+      break;
+    
+    case 4: result = "Осінь";
+           break;
+    default: result = "Неправельно ведене значення" ;
+      break;
+  }
+
+  
+  return result;
+
+}
+const season = Number(prompt());
+ console.log(getSeason(season));
