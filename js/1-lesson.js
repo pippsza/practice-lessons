@@ -57,16 +57,28 @@ function getSeason(number) {
 function logNumbers(min, max) {
   let numbers = 0;
 
-  for(let i = max; i >= min; i--) {
-    
+  for (let i = max; i >= min; i--) {
     if (i % 2 === 0) {
       numbers += i;
-      
     }
-
-    
   }
   return numbers;
 }
 
 // console.log(logNumbers(2, 55));
+
+// Напишіть функцію fizzBuzz яка приймає число
+//Якщо число ділитися на 3 повертати fizz
+//якщо ділитися на 5 повертати buzz
+//Якщо ділитися на 3 і на 5 повернути fizzbuzz
+
+function getfizzBuzz(number) {
+  if (number % 3 == 0 && number % 5 == 0) {
+    return "fizzbuzz";
+  } else if (number % 3 == 0) {
+    return "fizz";
+  } else if (number % 5 == 0) {
+    return "buzz";
+  } else return "Жодна умова не виконана";
+}
+console.log(getfizzBuzz(18));
