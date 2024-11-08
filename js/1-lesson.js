@@ -21,27 +21,52 @@ function getQuater(number) {
 //~ значення '1', то у змінну result запишемо 'зима', якщо має значення
 //~ '2' - 'весна' і так далі. Розв'яжіть завдання через switch-case.
 
-function getSeason(number) { 
+function getSeason(number) {
   let result = "";
   switch (number) {
-    case 1: result = "Зима";
+    case 1:
+      result = "Зима";
       break;
-    
-    case 2: result = "Весна";
+
+    case 2:
+      result = "Весна";
       break;
-    
-    case 3: result = "Літо";
+
+    case 3:
+      result = "Літо";
       break;
-    
-    case 4: result = "Осінь";
-           break;
-    default: result = "Неправельно ведене значення" ;
+
+    case 4:
+      result = "Осінь";
+      break;
+    default:
+      result = "Неправельно ведене значення";
       break;
   }
 
-  
   return result;
-
 }
-const season = Number(prompt());
- console.log(getSeason(season));
+// const season = Number(prompt());
+// console.log(getSeason(season));
+
+//~ Створи функцію logNumbers яка приймає min і max
+//~ і виводить у консоль
+//~ числа від max до min за спаданням
+//~ Додайте усі парні числа від min до max і поверніть результат з функції
+
+function logNumbers(min, max) {
+  let numbers = 0;
+
+  for(let i = max; i >= min; i--) {
+    
+    if (i % 2 === 0) {
+      numbers += i;
+      
+    }
+
+    
+  }
+  return numbers;
+}
+
+// console.log(logNumbers(2, 55));
