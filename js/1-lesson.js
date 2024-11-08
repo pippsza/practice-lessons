@@ -101,3 +101,26 @@ console.log(getfizzBuzz(18));
 
 // const userRule = prompt("Введіть логін");
 // console.log("userRule: ", userRule);
+ 
+
+
+const userLogin = prompt("Введіть логін");
+if (userLogin === null || userLogin === "") {
+  console.log("Скасовано");
+} else if (userLogin === "Адмін") {
+  const userRule = prompt("Введіть пароль");
+  
+  if (userRule === null || userRule === "") {
+    console.log("Скасовано");
+  } else if (userRule === "Я головний") {
+    console.log("Добрий день!");
+  } else {
+    console.log("Невірний пароль!");
+  }
+} else {
+  console.log("Я вас не знаю");
+}
+
+
+
+  
