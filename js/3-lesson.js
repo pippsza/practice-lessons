@@ -106,3 +106,12 @@ const users = [
 
 
 // console.log(getUserNames(users));
+
+// Отримати масив об'єктів користувачів за кольором очей (поле eyeColor).
+// [об'єкт Moore Hensley, об'єкт Sharlene Bush, об'єкт Carey Barr]
+
+const getEyeEyeUser = (users, color) => users
+  .filter(user => user.eyeColor === color)
+  .map(user => user.name);
+
+console.table(getEyeEyeUser(users, "blue"));
