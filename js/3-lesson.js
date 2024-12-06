@@ -152,3 +152,54 @@ const users = [
 // };
 
 // console.log(getSortedUniqueSkills(users));
+
+/* 
+
+  Реалізуйте клас WorkerManager, який дозволяє управляти списком робітників. Об'єкт повинен мати такі властивості та методи: name,surname, age, position, salary
+
+Властивість workers — масив, у якому зберігаються всі робітники.
+
+Методи:
+
+addWorker(worker) — додає нового робітника в масив workers.
+removeWorker(name) — видаляє робітника з масиву за ім'ям. Якщо такого робітника не існує, метод виводить повідомлення про це.
+getSalaryByName(name) — повертає зарплату робітника за його */
+
+const rey = [
+  {
+    name: "Іван",
+    surname: "Петров",
+    age: 28,
+    position: "Дизайнер",
+    salary: 25000,
+  },
+  {
+    name: "Олександр",
+    surname: "Пташинський",
+    age: 30,
+    position: "Інженер",
+    salary: 40000,
+  },
+  {
+    name: "Олексій",
+    surname: "Кудря",
+    age: 40,
+    position: "Менеджер",
+    salary: 30000,
+  },
+];
+
+class WorkerManager {
+  constructor(array) {
+    this.workers = array || [];
+  }
+  addWorker(worker) {
+    this.workers.push(worker);
+  }
+}
+
+addWorker(worker);
+
+const workman = new WorkerManager(rey);
+
+console.log(workman);
