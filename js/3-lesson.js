@@ -96,22 +96,32 @@ const users = [
 //    }
 //    return usersName
 
-
-
-
 // }
 // const getUserNames = users => users
 // .map((user => user.name))
-
-
 
 // console.log(getUserNames(users));
 
 // Отримати масив об'єктів користувачів за кольором очей (поле eyeColor).
 // [об'єкт Moore Hensley, об'єкт Sharlene Bush, об'єкт Carey Barr]
 
-const getEyeEyeUser = (users, color) => users
-  .filter(user => user.eyeColor === color)
-  .map(user => user.name);
+const getEyeEyeUser = (users, color) =>
+  users.filter((user) => user.eyeColor === color).map((user) => user.name);
 
 console.table(getEyeEyeUser(users, "blue"));
+
+// const getUserWithGender = (users, gender) =>
+//   users.filter((user) => user.gender === gender).map((user) => user.name);
+
+// console.log(getUserWithGender(users, "male"));
+
+const getUserWithGender = (users, gender) => {
+  return users.reduce((acc, user) => {
+    if (user.gender === gender) {
+      acc.push(user.name);
+    }
+    return acc;
+  }, []);
+};
+
+console.log(getUserWithGender(users, "male"));
