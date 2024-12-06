@@ -115,13 +115,25 @@ console.table(getEyeEyeUser(users, "blue"));
 
 // console.log(getUserWithGender(users, "male"));
 
-const getUserWithGender = (users, gender) => {
-  return users.reduce((acc, user) => {
-    if (user.gender === gender) {
-      acc.push(user.name);
-    }
-    return acc;
-  }, []);
-};
+// const getUserWithGender = (users, gender) => {
+//   return users.reduce((acc, user) => {
+//     if (user.gender === gender) {
+//       acc.push(user.name);
+//     }
+//     return acc;
+//   }, []);
+// };
 
-console.log(getUserWithGender(users, "male"));
+// console.log(getUserWithGender(users, "male"));
+
+
+
+// Отримати загальну суму балансу (поле balance) всіх користувачів.
+// console.log(calculateTotalBalance(users)); // 20916
+
+const calculateTotalBalance = (users) => {
+  return users.reduce((acc, user) => {
+    return acc + user.balance;
+  }, 0);
+}
+console.log(calculateTotalBalance(users)); // 20916
