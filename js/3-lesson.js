@@ -105,10 +105,10 @@ const users = [
 // Отримати масив об'єктів користувачів за кольором очей (поле eyeColor).
 // [об'єкт Moore Hensley, об'єкт Sharlene Bush, об'єкт Carey Barr]
 
-const getEyeEyeUser = (users, color) =>
-  users.filter((user) => user.eyeColor === color).map((user) => user.name);
+// const getEyeEyeUser = (users, color) =>
+//   users.filter((user) => user.eyeColor === color).map((user) => user.name);
 
-console.table(getEyeEyeUser(users, "blue"));
+// console.table(getEyeEyeUser(users, "blue"));
 
 // const getUserWithGender = (users, gender) =>
 //   users.filter((user) => user.gender === gender).map((user) => user.name);
@@ -126,14 +126,29 @@ console.table(getEyeEyeUser(users, "blue"));
 
 // console.log(getUserWithGender(users, "male"));
 
-
-
 // Отримати загальну суму балансу (поле balance) всіх користувачів.
 // console.log(calculateTotalBalance(users)); // 20916
 
-const calculateTotalBalance = (users) => {
-  return users.reduce((acc, user) => {
-    return acc + user.balance;
-  }, 0);
-}
-console.log(calculateTotalBalance(users)); // 20916
+// const calculateTotalBalance = (users) => {
+//   return users.reduce((acc, user) => {
+//     return acc + user.balance;
+//   }, 0);
+// }
+// console.log(calculateTotalBalance(users)); // 20916
+
+// / Отримати масив всіх умінь всіх користувачів (поле skills), при цьому не повинно бути
+// Уміння, що повторюються, і вони повинні бути відсортовані в алфавітному порядку.
+// console.log(getSortedUniqueSkills(users));
+// ['adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit' , 'non', 'nostrud', 'nulla', 'proident', 'tempor', 'velit', 'veniam']
+
+// const getSortedUniqueSkills = (users) => {
+//   return users
+//     .flatMap((user) => user.skills)
+//     .filter((skill, index, arr) => {
+//         console.table(`перевірка ${arr.indexOf(skill)} та ${index}`);
+//       return arr.indexOf(skill) === index;
+//     })
+//     .toSorted();
+// };
+
+// console.log(getSortedUniqueSkills(users));
