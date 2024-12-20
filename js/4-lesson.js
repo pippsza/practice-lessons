@@ -38,15 +38,49 @@
 і кнопка набуває початкового вигляду.
  */
 
-const passwordInput = document.querySelector("#passwordInput");
-const passwordButton = document.querySelector("#passwordButton");
+// const passwordInput = document.querySelector("#passwordInput");
+// const passwordButton = document.querySelector("#passwordButton");
 
-passwordButton.addEventListener("click", () => {
-  if (passwordInput.type === "text") {
-    passwordInput.type = "password";
-    passwordButton.textContent = "Розкрити";
-  } else {
-    passwordInput.type = "password";
-    passwordButton.textContent = "Приховати";
-  }
-});
+// passwordButton.addEventListener("click", () => {
+//   if (passwordInput.type === "text") {
+//     passwordInput.type = "password";
+//     passwordButton.textContent = "Розкрити";
+//   } else {
+//     passwordInput.type = "password";
+//     passwordButton.textContent = "Приховати";
+//   }
+// });
+
+// <!-- ЗАДАЧА 4 -->
+
+/*
+Завдання 4
+Кнопка "Зменшити" робить квадрат менше на 10 пікселів, допопка "Збільшити" - більше на 10 пікселів.//
+
+*/
+
+// const boxContainer = document.querySelector("#box");
+// const mainContainer = document.querySelector(".container-task-4");
+
+// mainContainer.addEventListener("click", (eve) => {
+//   console.log(eve.target.id === "decrease");
+//   if (eve.target.id === "decrease") {
+//     console.log(getComputedStyle(boxContainer).width);
+//     const width = parseInt(getComputedStyle(boxContainer).width);
+//     const height = parseInt(getComputedStyle(boxContainer).height);
+//     console.log(width);
+
+//     const widthOfChange = `${width - 10}px`;
+//     const heightOfChange = `${height - 10}px`;
+//     boxContainer.style.width = widthOfChange;
+//     boxContainer.style.height = heightOfChange;
+//     console.log(widthOfChange);
+//   } else if (eve.target.id === "increase") {
+//     const width = parseInt(getComputedStyle(boxContainer).width);
+//     const height = parseInt(getComputedStyle(boxContainer).height);
+//     const widthOfChange = `${width + 10}px`;
+//     const heightOfChange = `${height + 10}px`;
+//     boxContainer.style.width = widthOfChange;
+//     boxContainer.style.height = heightOfChange;
+//   }
+// });
