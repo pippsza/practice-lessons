@@ -38,15 +38,15 @@
 і кнопка набуває початкового вигляду.
  */
 
-const passwordInput = document.querySelector("#passwordInput");
-const passwordButton = document.querySelector("#passwordButton");
+// const passwordInput = document.git("#passwordInput");
+// const passwordButton = document.querySelector("#passwordButton");
 
-passwordButton.addEventListener("click", () => {
-  if (passwordInput.type === "text") {
-    passwordInput.type = "password";
-    passwordButton.textContent = "Розкрити";
-  } else {
-    passwordInput.type = "password";
-    passwordButton.textContent = "Приховати";
-  }
-});
+// passwordButton.addEventListener("click", () => {
+//   if (passwordInput.type === "text") {
+//     passwordInput.type = "password";
+//     passwordButton.textContent = "Розкрити";
+//   } else {
+//     passwordInput.type = "password";
+//     passwordButton.textContent = "Приховати";
+//   }
+// });
